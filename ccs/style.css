@@ -14,12 +14,30 @@ header {
 main {
   background-color: #03242a;
   width: 100%;
+  height: 100vh;
 }
 footer {
   background-color: #ff74b1;
   width: 100%;
 }
-
+h1 {
+  font-size: 40px;
+  color: #ffffff;
+  padding: 10px;
+}
+h2 {
+  font-size: 28px;
+  color: #ffffff;
+  padding: 10px;
+}
+h3 {
+  font-size: 24px;
+  color: #ffffff;
+}
+p {
+  color: #ffffff;
+}
+/* NAVBAR NAVBAR NAVBAR */
 .navbar-brand img {
   height: 60px;
 }
@@ -45,52 +63,39 @@ footer {
 }
 /* HEADER HEADER HEADER  */
 
-.container-videos {
-  display: grid;
-  row-gap: 0.9em;
-  justify-items: center;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    "video1 video2"
-    "video3 video4";
-}
-
-.video1 {
-  grid-area: video1;
-}
-.video2 {
-  grid-area: video2;
-}
-.video3 {
-  grid-area: video3;
-}
-.video4 {
-  grid-area: video4;
-}
 /* PAGINA NOSOTROS */
 .container-nosotros {
   display: grid;
-
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "item-nosotros imagen-nosotros"
-    "video-nosotros video-nosotros";
+    "boton-volver -";
 }
 .item-nosotros {
   grid-area: item-nosotros;
+  margin-left: 30px;
+  margin-top: 20px;
 }
-.video-nosotros {
-  grid-area: video-nosotros;
+.boton-volver {
+  padding: 20px;
+  padding-top: 30px;
+  grid-area: boton-volver;
 }
 .imagen-nosotros {
   grid-area: imagen-nosotros;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.imagen-nosotros img {
+  width: 80%;
 }
 .item-nosotros h1 {
   text-align: start;
 }
-
+.main-nosotros {
+  background-color: #03242a;
+}
 /* FIN PAGINA NOSOTROS */
 
 /* PAGINA HABILIDADES */
@@ -98,11 +103,13 @@ footer {
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
     "imagen-skills1 imagen-skills2"
-    "texto-skills1 texto-skills2";
+    "texto-skills1 texto-skills2"
+    "boton-volver-skills boton-volver-skills";
 }
+
 .imagen-skills1 {
   grid-area: imagen-skills1;
 }
@@ -122,66 +129,37 @@ footer {
 .titulo-skills {
   text-align: center;
 }
-.boton-volver {
+.boton-volver-skills {
+  grid-area: boton-volver-skills;
   text-align: center;
+}
+.main-habilidades {
+  background-color: #03242a;
 }
 
 /* FIN PAGINA HABILIDADES */
 
-.main-video {
-  border: 1px solid #3b7a90;
-  border-radius: 5px;
-  padding: 20px;
-  width: 300px;
-  background-color: #f5f5f5;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-/* CARD CARD CARD CARD  */
+/* INICIO VIDEOS TRABAJO */
 
-.video {
-  border: 1px solid #3b7a90;
-  border-radius: 5px;
-  padding: 20px;
-  width: 300px;
-  background-color: #ffffff;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+.card-video {
+  background-color: #03242a;
+  border-color: #fcffff;
+  color: #f5f5f5;
 }
-.video h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.video h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
+.card-footer p {
+  color: #ffffff;
   text-align: center;
 }
 
-/* FIN DE CARD FIN DE CARD FIN DE CARD  */
-
-h1 {
-  font-size: 40px;
-  color: #ffffff;
-  padding: 10px;
-}
-h2 {
-  font-size: 28px;
-  color: #ffffff;
-  padding: 10px;
-}
-h3 {
-  font-size: 24px;
-  color: #ffffff;
-}
-p {
-  color: #ffffff;
-}
 .just-edit-footer {
   font-size: 20px;
   color: #ffffff;
 }
 .parrafo-nosotros {
   color: #ffffff;
+}
+.boton-volver-nosotros {
+  text-align: center;
 }
 
 .habilidades-apps {
@@ -236,56 +214,71 @@ p {
 
 /* INICIO MEDIA PARA MOVILES */
 @media screen and (max-width: 425px) {
-  .logo {
-    text-align: center;
-    padding-top: 5px;
-  }
-
-  .container-videos {
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4 1fr);
-    grid-template-areas:
-      "video1"
-      "video2"
-      "video3"
-      "video4";
-  }
-  .div-footer {
+  .container-skills {
     display: grid;
-    align-items: center;
-    justify-items: center;
-    padding: 10px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      "left"
-      "right";
+      "imagen-skills1"
+      "imagen-skills2"
+      "texto-skills1"
+      "textoskills2"
+      "boton-volver-skills";
   }
-  .left {
-    grid-area: left;
-    text-align: center;
+  .imagen-skills1 {
+    grid-area: imagen-skills1;
   }
-  .right {
-    align-items: center;
-    grid-area: right;
+  .imagen-skills2 {
+    grid-area: imagen-skills2;
   }
-  .right ul li {
-    padding: 10px;
+  .texto-skills1 {
+    grid-area: texto-skills1;
+  }
+  .texto-skills2 {
+    grid-area: texto-skills2;
+  }
+  .boton-volver-skills {
+    grid-area: boton-volver-skills;
   }
 }
+.div-footer {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "left"
+    "right";
+}
+.left {
+  grid-area: left;
+  text-align: center;
+}
+.right {
+  align-items: center;
+  grid-area: right;
+}
+.right ul li {
+  padding: 10px;
+}
+
 /* INICIO MEDIA PARA TABLETS */
+
 @media screen and (max-width: 768px) {
   .container-skills {
     display: grid;
+    width: 100%;
     justify-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas:
       "imagen-skills1"
       "texto-skills1"
       "imagen-skills2"
-      "texto-skills2";
+      "texto-skills2"
+      "boton-volver-skills";
   }
   .imagen-skills1 {
     grid-area: imagen-skills1;
@@ -302,5 +295,35 @@ p {
   .texto-skills2 {
     grid-area: texto-skills2;
     margin-top: 1em;
+  }
+  .boton-volver-skills {
+    grid-area: boton-volver-skills;
+  }
+  .container-nosotros {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "imagen-nosotros"
+      "item-nosotros "
+      "boton-volver-nosotros";
+  }
+  .boton-volver-nosotros {
+    text-align: center;
+    grid-area: boton-volver-nosotros;
+  }
+  .imagen-nosotros {
+    text-align: center;
+    margin-left: 0;
+  }
+  .item-nosotros {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .item-nosotros h1 {
+    text-align: center;
   }
 }
