@@ -141,16 +141,6 @@ p {
 
 /* INICIO VIDEOS TRABAJO */
 
-.card-video {
-  background-color: #03242a;
-  border-color: #fcffff;
-  color: #f5f5f5;
-}
-.card-footer p {
-  color: #ffffff;
-  text-align: center;
-}
-
 .just-edit-footer {
   font-size: 20px;
   color: #ffffff;
@@ -173,17 +163,8 @@ p {
   color: #821a48;
   text-decoration: none;
 }
-.buttom-varios button {
-  padding: 1em;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
-}
-.bottom-work {
-  font-size: 16px;
-  color: #821a48;
-  padding: 10px;
-  text-decoration: none;
-}
+
+
 .div-footer {
   display: grid;
   padding: 10px;
@@ -211,6 +192,25 @@ p {
   background-color: rgb(255, 208, 246);
   text-align: center;
 }
+
+.container-videos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: baseline;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.main-container{
+  background-color: #03242a;
+}
+
+.boton-volver-trabajo {
+  text-align: center;
+  margin-top
+}
+
 
 /* INICIO MEDIA PARA MOVILES */
 @media screen and (max-width: 425px) {
@@ -326,4 +326,18 @@ p {
   .item-nosotros h1 {
     text-align: center;
   }
+  .container-videos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+  .card-videos{
+  text-align: center;
+  }
 }
+
