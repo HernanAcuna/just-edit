@@ -164,13 +164,33 @@ p {
   text-decoration: none;
 }
 
-
-.div-footer {
+/* FOOTER FOOTER FOOTER */
+.container-footer {
   display: grid;
+  align-items: center;
+  justify-items: center;
   padding: 10px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "left right";
+}
+.left {
+  grid-area: left;
+  text-align: center;
+}
+.right {
+  align-items: center;
+  grid-area: right;
+}
+
+.right ul li {
+  padding: 10px;
+}
+.left {
+  grid-area: left;
+}
+.right {
+  grid-area: right;
 }
 .left {
   text-align: start;
@@ -200,17 +220,14 @@ p {
   align-content: baseline;
   align-items: center;
   justify-content: space-around;
-  
 }
-.main-container{
+.main-container {
   background-color: #03242a;
 }
 
 .boton-volver-trabajo {
   text-align: center;
-  margin-top
 }
-
 
 /* INICIO MEDIA PARA MOVILES */
 @media screen and (max-width: 425px) {
@@ -240,28 +257,28 @@ p {
   .boton-volver-skills {
     grid-area: boton-volver-skills;
   }
-}
-.div-footer {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  padding: 10px;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas:
-    "left"
-    "right";
-}
-.left {
-  grid-area: left;
-  text-align: center;
-}
-.right {
-  align-items: center;
-  grid-area: right;
-}
-.right ul li {
-  padding: 10px;
+  .container-footer {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "left"
+      "right";
+  }
+  .left {
+    grid-area: left;
+    text-align: center;
+  }
+  .right {
+    align-items: center;
+    grid-area: right;
+  }
+  .right ul li {
+    padding: 10px;
+  }
 }
 
 /* INICIO MEDIA PARA TABLETS */
@@ -334,10 +351,28 @@ p {
     align-content: center;
     align-items: center;
     justify-content: space-around;
-    
   }
-  .card-videos{
-  text-align: center;
+  .card-videos {
+    text-align: center;
+  }
+  .container-footer {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "left right";
+  }
+  .left {
+    grid-area: left;
+    text-align: center;
+  }
+  .right {
+    align-items: center;
+    grid-area: right;
+  }
+  .right ul li {
+    padding: 10px;
   }
 }
-
