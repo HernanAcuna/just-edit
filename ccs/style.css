@@ -139,8 +139,6 @@ p {
 
 /* FIN PAGINA HABILIDADES */
 
-/* INICIO VIDEOS TRABAJO */
-
 .just-edit-footer {
   font-size: 20px;
   color: #ffffff;
@@ -151,17 +149,29 @@ p {
 .boton-volver-nosotros {
   text-align: center;
 }
-
-.habilidades-apps {
-  font-size: 16px;
-  color: #821a48;
-  padding: 10px;
-}
-.buttom-varios {
+.boton-main-1 {
   font-size: 16px;
   text-align: center;
   color: #821a48;
   text-decoration: none;
+}
+.boton-main-1 button {
+  background-color: #3b7a90;
+  margin-top: 1em;
+}
+.boton-main-2 {
+  font-size: 16px;
+  text-align: center;
+  color: #821a48;
+  text-decoration: none;
+  margin-top: 1em;
+}
+.boton-main-2 button {
+  background-color: #3b7a90;
+}
+.main-video iframe {
+  width: 500px;
+  height: 500px;
 }
 
 /* FOOTER FOOTER FOOTER */
@@ -209,8 +219,11 @@ p {
 /* MAINNNNNNNNNNNNN */
 
 .div-text {
-  background-color: rgb(255, 208, 246);
+  background-color: #03242a;
   text-align: center;
+}
+.div-text h2 {
+  padding-inline: 120px;
 }
 
 .container-videos {
@@ -234,13 +247,12 @@ p {
   .container-skills {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "imagen-skills1"
       "imagen-skills2"
       "texto-skills1"
-      "textoskills2"
-      "boton-volver-skills";
+      "textoskills2";
   }
   .imagen-skills1 {
     grid-area: imagen-skills1;
@@ -255,8 +267,9 @@ p {
     grid-area: texto-skills2;
   }
   .boton-volver-skills {
-    grid-area: boton-volver-skills;
+    padding-bottom: 10px;
   }
+
   .container-footer {
     display: grid;
     align-items: center;
@@ -279,6 +292,13 @@ p {
   .right ul li {
     padding: 10px;
   }
+  .main-video iframe {
+    width: 350px;
+    height: 350px;
+  }
+  .div-text h2 {
+    padding: 10px;
+  }
 }
 
 /* INICIO MEDIA PARA TABLETS */
@@ -289,13 +309,12 @@ p {
     width: 100%;
     justify-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
       "imagen-skills1"
       "texto-skills1"
       "imagen-skills2"
-      "texto-skills2"
-      "boton-volver-skills";
+      "texto-skills2";
   }
   .imagen-skills1 {
     grid-area: imagen-skills1;
@@ -314,8 +333,9 @@ p {
     margin-top: 1em;
   }
   .boton-volver-skills {
-    grid-area: boton-volver-skills;
+    padding-bottom: 10px;
   }
+
   .container-nosotros {
     display: grid;
     width: 100%;
@@ -328,8 +348,9 @@ p {
       "boton-volver-nosotros";
   }
   .boton-volver-nosotros {
-    text-align: center;
     grid-area: boton-volver-nosotros;
+    text-align: center;
+    background-color: #03242a;
   }
   .imagen-nosotros {
     text-align: center;
@@ -355,18 +376,32 @@ p {
   .card-videos {
     text-align: center;
   }
+  .videos-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+  }
   .container-footer {
     display: grid;
     align-items: center;
     justify-items: center;
-    padding: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "left right";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "left"
+      "right";
   }
   .left {
     grid-area: left;
     text-align: center;
+    padding-top: 20px;
+  }
+  .left p {
+    margin-bottom: 0;
   }
   .right {
     align-items: center;
@@ -374,5 +409,9 @@ p {
   }
   .right ul li {
     padding: 10px;
+  }
+  .right ul {
+    padding: 0;
+    margin-bottom: 0;
   }
 }
