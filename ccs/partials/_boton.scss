@@ -1,0 +1,22 @@
+.botons-main,
+.boton-trabajo,
+.boton-habilidades,
+.boton-nosotros,
+.boton-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boton-main-1 button,
+.boton-trabajo button,
+.boton-habilidades button,
+.boton-nosotros button,
+.boton-contacto button {
+  background-color: $HeaderColor;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 6px;
+  &:hover {
+    background-color: rgb(18, 70, 90);
+  }
+}

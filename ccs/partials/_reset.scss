@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Monserrat", sans-serif;
+}
+::selection {
+  background-color: $FooterColor;
+}
+header {
+  background-color: $HeaderColor;
+  width: 100%;
+}
+.main-color {
+  background-color: $MainColor;
+  width: 100%;
+}
+footer {
+  background-color: $FooterColor;
+  width: 100%;
+}
+.container-trabajo {
+  background-color: $MainColor;
+  width: 100%;
+}

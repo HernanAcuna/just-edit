@@ -1,0 +1,33 @@
+.container-footer {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "left right";
+}
+.left {
+  grid-area: left;
+  text-align: center;
+}
+.right {
+  align-items: center;
+  grid-area: right;
+}
+
+.right ul {
+  display: flex;
+  justify-content: space-around;
+  text-align: end;
+  list-style: none;
+  gap: 10px;
+
+  li {
+    padding: 10px;
+  }
+
+  img {
+    width: 40px;
+  }
+}
